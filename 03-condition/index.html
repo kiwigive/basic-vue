@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vue learning</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        <button type="button" name="button" v-on:click="like=!like">Like</button>
+        <h1 v-if="like">Thanks for like</h1>
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>

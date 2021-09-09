@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vue learning</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        <span>ชื่อพนักงาน</span>
+        <input type="text" v-model="newData.empName">
+        <span>เงินเดือน</span>
+        <input type="number" v-model="newData.salary">
+        <br><br>
+        <button @click="addEmp">Submit</button>
+        <br>
+        <ul>
+            <li v-for="emp in empGroup">
+                {{emp.empName}} ได้เงินเดือน {{emp.salary}}
+            </li>
+        </ul>
+        <h1>Sum of salary: {{summation}}</h1>
+        <h1>Average: {{avg}}</h1>
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>
